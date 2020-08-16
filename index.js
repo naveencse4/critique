@@ -30,11 +30,6 @@ app.use(passport.session());
 authRoutes(app);
 billingRoutes(app);
 
-/* route handler */
-app.get('/', (req,res) => {
-    res.send({ bye: 'buddy' });
-});
-
 if(process.env.NODE_ENV === 'production') {
     // Express will serve up production assets like main.js file or main.css file
     app.use(express.static('client/build'));
