@@ -5,6 +5,7 @@ import * as actions from '../actions';
 
 class Payments extends Component {
     render() {
+        console.log(process.env);
         return(
             <StripeCheckout 
                 name="Critique"
