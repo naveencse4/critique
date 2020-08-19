@@ -8,6 +8,7 @@ const passport = require('passport');
 const bodyParser = require('body-parser');
 const app = express();
 require('./models/User');
+require('./models/Survey');
 require('./services/passport');
 
 mongoose.connect(keys.mongoURI, {
